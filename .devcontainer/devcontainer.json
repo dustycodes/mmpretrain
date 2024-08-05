@@ -1,0 +1,27 @@
+{
+    "name": "MMClassification Dev Container",
+    "image": "mmpretrain:latest",
+    "runArgs": [
+        "--env-file",
+        ".devcontainer/devcontainer.env",
+        "--gpus",
+        "all",
+        "--shm-size",
+        "16G"
+    ],
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "donjayamanne.python-environment-manager",
+                "amazonwebservices.aws-toolkit-vscode",
+                "Boto3typed.boto3-ide",
+                "mikestead.dotenv",
+                "mark-tucker.aws-cli-configure",
+                "076923.python-image-preview",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    }
+}
